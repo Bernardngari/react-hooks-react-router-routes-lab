@@ -5,11 +5,11 @@ function Movies() {
 
 
 const items=movies.map((item)=>(
-<React.Fragment key={item.title}>
+<div key={item.title}>
       <h3>{item.title}</h3>
       <p>{item.time}</p>
       <ul>{item.genres.map((listItem)=><li key={listItem}>{listItem}</li>)}</ul>
-</React.Fragment>
+</div>
 
 ))
   return <div>

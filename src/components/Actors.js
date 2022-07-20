@@ -3,11 +3,11 @@ import { actors } from "../data";
 
 function Actors(){
 const eachActor= actors.map((actor)=>(
-<React.Fragment key={actor.name}>
+<div key={actor.name}>
 <h3>{actor.name}</h3>
 <ul>{actor.movies.map((li)=><li key={li}>{li}</li>)}</ul>
 
-</React.Fragment>
+</div>
 
 ))
   return <div>

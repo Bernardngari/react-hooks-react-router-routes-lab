@@ -10,10 +10,10 @@ function App(){
   return <div>
     <NavBar />
     <Switch>
-      <Route path="/"><Home /> </Route>
+      <Route exact path="/"><Home /></Route>
       <Route path="/movies"><Movies /></Route>
       <Route path="/directors"><Directors /></Route>
-      <Route path="/actors"><Actors /></Route>
+      <Route path="/actors"> <Actors /></Route>
      
     </Switch>
   </div>;
